@@ -9,3 +9,7 @@ form label {
     font-size: 18px;
     font-weight: bold;
 }
+
+legend {
+    margin: 20px 0;
+}
