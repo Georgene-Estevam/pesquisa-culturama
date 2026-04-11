@@ -17,6 +17,7 @@
                 <legend>Dados pessoais</legend>
 
                     <!--Dados pessoais-->
+<<<<<<< HEAD
                     <label for="name">Digite seu nome:*</label>
                     <input type="text" name="userName" id="name" required><br>
                     <label for="lastName">Digite seu sobrenome:*</label>
@@ -34,12 +35,32 @@
 
                     <label for="image">Upload de foto</label>
                     <input type="file" name="userImage" id="image"><br>
+=======
+                    <label for="userName">Digite seu nome:*</label>
+                    <input type="text" name="userName" id="" required><br>
+                    <label for="lastName">Digite seu sobrenome:*</label>
+                    <input type="text" name="lastName" id="" required><br>
+
+                    <label for="userAge">Idade:</label>
+                    <input type="number" name="userAge" id="" min="12" max="100" required><br>
+                    <label for="birthDate">Data de nascmento:</label>
+                    <input type="date" name="birthDate" id=""><br>
+
+                    <label for="userEmail">Email:*</label>
+                    <input type="email" name="userEmail" id="" required><br>
+                    <label for="userPhoneNumber">Telefone:</label>
+                    <input type="tel" name="userPhoneNumber" id="" pattern="[0-9]{11}" placeholder="Ex: 81921443222"><br>
+
+                    <label for="userImage">Upload de foto</label>
+                    <input type="file" name="userImage" id=""><br>
+>>>>>>> a155abc (Adiciona opcoes de estilo musical)
             </fieldset>
 
             <fieldset>
                 <legend>Perfil do usuário</legend>
 
                 <p>Gênero:</p>
+<<<<<<< HEAD
                 <input type="radio" name="userGender" id="fem" value="Feminino">
                 <label for="fem">Feminino</label>
 
@@ -52,6 +73,20 @@
 
                 <label for="maritalStatus">Estado civil:</label>
                 <select name="userMaritalStatus" id="maritalStatus">
+=======
+                <input type="radio" name="userGender" id="" value="Feminino">
+                <label for="userGender">Feminino</label>
+
+                <input type="radio" name="userGender" id="" value="Masculino">
+                <label for="userGender">Masculino</label>
+
+                <input type="radio" name="userGender" id="" value="naoInformado">
+                <label for="userGender">Prefiro não informar</label>
+                <br>
+
+                <label for="maritalStatus">Estado civil:</label>
+                <select name="maritalStatus" id="">
+>>>>>>> a155abc (Adiciona opcoes de estilo musical)
                     <option value="naoInformado">Selecione...</option>
                     <option value="solteiro">Solteiro</option>
                     <option value="casado">Casado</option>
@@ -60,8 +95,13 @@
                 </select>
                 <br>
 
+<<<<<<< HEAD
                 <label for="state">Selecione seu estado:</label>
                 <select name="userState" id="state" required>
+=======
+                <label for="userState">Selecione seu estado:</label>
+                <select name="userState" id="" required>
+>>>>>>> a155abc (Adiciona opcoes de estilo musical)
                     <option value="acre">Acre</option>
                     <option value="acre">Alagoas</option>
                     <option value="amapa">Amapá</option>
@@ -92,14 +132,20 @@
                 </select>
                 <br>
 
+<<<<<<< HEAD
                 <label for="city">Cidade:</label>
                 <input type="text" name="userCity" id="city">
+=======
+                <label for="userCity">Cidade:</label>
+                <input type="text" name="userCity" id="">
+>>>>>>> a155abc (Adiciona opcoes de estilo musical)
             </fieldset>
 
             <fieldset>
                 <legend>Hábitos:</legend>
                 <p>Redes sociais:</p>
 
+<<<<<<< HEAD
                 <input type="checkbox" name="social" id="facebook" value="facebook">
                 <label for="facebook">Facebook</label>
                 <br>
@@ -109,6 +155,30 @@
                 <input type="checkbox" name="social" id="linkedin" value="linkedin">
                 <label for="linkedin">Linkedin</label>
                 <br>
+=======
+                <input type="checkbox" name="social" id="" value="facebook">
+                <label for="social">Facebook</label>
+                <br>
+                <input type="checkbox" name="social" id="" value="instagram">
+                <label for="social">Instagram</label>
+                <br>
+                <input type="checkbox" name="social" id="" value="linkedin">
+                <label for="social">Linkedin</label>
+                <br>
+
+                <label for="styleMusic">Estilo musical:</label>
+                <input type="text" list="styleTypes" name="userStyleMusic" id="styleMusic">
+
+                <datalist id="styleTypes">
+                    <option value="Rock"></option>
+                    <option value="Pop"></option>
+                    <option value="Reggae"></option>
+                    <option value="MPB"></option>
+                    <option value="Samba"></option>
+                    <option value="Sertanejo"></option>
+                    <option value="Música clássica"></option>
+                </datalist>
+>>>>>>> a155abc (Adiciona opcoes de estilo musical)
             </fieldset>
 
             <button type="submit">Enviar</button>
