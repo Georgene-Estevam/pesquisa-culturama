@@ -145,7 +145,30 @@
                 <br>
 
                 <label for="favoriteColor">Cor favorita</label>
-                <input type="color" name="userFavoriteColor" id="favoriteColor">
+                <input type="color" name="userFavoriteColor" id="favoriteColor">                
+            </fieldset>
+
+            <fieldset>
+                <legend>Opinião</legend>
+
+                <p>Como você descreve a qualidade do nosso serviço?</p>
+                <input type="radio" name="userServiceOpinion" id="great" value="otima">
+                <label for="geat">Ótima</label><br>
+
+                <input type="radio" name="userServiceOpinion" id="good" value="boa">
+                <label for="good">Boa</label><br>
+
+                <input type="radio" name="userServiceOpinion" id="regular" value="regular">
+                <label for="regular">Regular</label><br>
+
+                <input type="radio" name="userServiceOpinion" id="bad" value="ruim">
+                <label for="bad">Ruim</label><br>
+
+                <input type="radio" name="userServiceOpinion" id="terrible" value="pessimo">
+                <label for="terrible">Péssimo</label><br>
+
+                <label for="comment">Escreva sua opinião no campo de texto abaixo:</label><br>
+                <textarea name="userComment" id="comment" placeholder="Descreva uma avaliação em até 2000 palavras" maxlength="2000" rows="8" cols="56" style="resize: none;"></textarea>
             </fieldset>
 
             <button type="submit">Enviar</button>
