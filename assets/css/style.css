@@ -2,14 +2,122 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-form label {
-    font-size: 18px;
-    font-weight: bold;
+body {
+    background-color: #e2e0e0;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    width: 100px;
+}
+
+form {
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    margin-bottom: 120px;
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #aaaaaa;
+    border-radius: 7px;
+    margin-bottom: 20px;
 }
 
 legend {
-    margin: 20px 0;
+    padding: 0 6px;
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+label {
+    display: inline-block;
+    margin: 7px 10px 7px 0;
+
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #aaaaaa;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: auto;
+}
+
+input[type=color] {
+    width: 60px;
+    height: 30px;
+    padding: 0;
+    border-radius: 0;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: #cccccc;
+}
+
+input:invalid, select#state:invalid {
+    border-color: #fd4848;
+    background-color: #fc2c2c59;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button, input[type=reset] {
+    cursor: pointer;
+    width: 50%;
+    max-width: 150px;
+    height: 35px;
+    border: 1px solid #aaaaaa;
+    border-radius: 7px;
+    margin-right: 20px;
+    padding: 0;
+    font-size: 17px;
+    box-shadow: 3px 3px 3px #aaaaaa;
+}
+
+button:hover {
+    background-color: #38b338;
+    transition: 0.5s;
+}
+
+input[type=reset]:hover {
+    background-color: #bbbbbb;
+    transition: 0.5s;
+}
+
+/*=============================Responsividade=============================*/
+@media (max-width: 375px) {
+    button, input[type=reset] {
+        width: 100%;
+        max-width: 400px;
+        display: block;
+        margin: 15px 0;
+    }
 }
