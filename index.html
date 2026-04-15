@@ -14,7 +14,7 @@
     <main>
         <header>
             <img src="./assets/img/logo-culturama.png" alt="Logo culturama">
-            <h1>Pesquisa online</h1>
+            <h1>Pesquisa online de opinião</h1>
         </header>
 
         <section>
@@ -28,13 +28,13 @@
                         <label for="lastName">Digite seu sobrenome:*</label>
                         <input type="text" name="userLastName" id="lastName" required><br>
 
-                        <label for="age">Idade:</label>
+                        <label for="age">Idade:*</label>
                         <input type="number" name="userAge" id="age" min="12" max="100" required><br>
                         <label for="birthDate">Data de nascmento:</label>
                         <input type="date" name="userBirthDate" id="birthDate"><br>
 
                         <label for="email">Email:*</label>
-                        <input type="email" name="userEmail" id="email" required><br>
+                        <input type="email" name="userEmail" id="email" required placeholder="seuemail@..."><br>
                         <label for="phoneNumber">Telefone:</label>
                         <input type="tel" name="userPhoneNumber" id="phoneNumber" pattern="[0-9]{11}" placeholder="Ex: 81910102020"><br>
 
@@ -47,10 +47,10 @@
 
                     <p>Gênero:</p>
                     <input type="radio" name="userGender" id="fem" value="Feminino">
-                    <label for="fem">Feminino</label>
+                    <label for="fem">Feminino</label><br>
 
                     <input type="radio" name="userGender" id="masc" value="Masculino">
-                    <label for="masc">Masculino</label>
+                    <label for="masc">Masculino</label><br>
 
                     <input type="radio" name="userGender" id="notInformed" value="naoInformado">
                     <label for="notInformed">Prefiro não informar</label>
@@ -68,7 +68,8 @@
                     <br>
 
                     <label for="userState">Selecione seu estado:</label>
-                    <select name="userState" id="" required>
+                    <select name="userState" id="state" required>
+                        <option value="">selecione...</option>
                         <option value="acre">Acre</option>
                         <option value="acre">Alagoas</option>
                         <option value="amapa">Amapá</option>
@@ -157,14 +158,14 @@
                     <label for="terrible">Péssimo</label><br>
 
                     <label for="comment">Escreva sua opinião no campo de texto abaixo:</label><br>
-                    <textarea name="userComment" id="comment" placeholder="Descreva uma avaliação em até 2000 palavras" maxlength="2000" rows="8" cols="50" style="resize: none;"></textarea>
+                    <textarea name="userComment" id="comment" placeholder="Descreva uma avaliação em até 2000 palavras" maxlength="2000" style="resize: none;"></textarea>
                 </fieldset>
 
                 <fieldset>
                     <legend>Confirmações</legend>
 
                     <input type="checkbox" name="userLgpd" id="userLgpdTerm" value="accepted" required>
-                    <label for="userLgpdTerm">Eu aceito participar da pesquisa</label><br>
+                    <label for="userLgpdTerm">Eu aceito participar da pesquisa*</label><br>
 
                     <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
                     <label for="getResult">Desejo receber o resultado por email</label><br>
@@ -172,6 +173,7 @@
 
                 <button type="submit">Enviar</button>
                 <input type="reset" value="Limpar">
+
             </form>
         </section>
     </main>
