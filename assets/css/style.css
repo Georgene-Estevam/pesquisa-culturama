@@ -65,6 +65,15 @@ input, select, textarea {
     font-size: 15px;
 }
 
+input[type=tel],input[type=file] {
+    margin-bottom: 2px;
+}
+
+small {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
 input[type=radio], input[type=checkbox] {
     width: auto;
 }

@@ -36,10 +36,13 @@
                         <label for="email">Email:*</label>
                         <input type="email" name="userEmail" id="email" required placeholder="seuemail@..."><br>
                         <label for="phoneNumber">Telefone:</label>
-                        <input type="tel" name="userPhoneNumber" id="phoneNumber" pattern="[0-9]{11}" placeholder="Ex: 81910102020"><br>
+                        <input type="tel" name="userPhoneNumber" id="phoneNumber" pattern="[0-9]{11}" placeholder="Ex: 81910102020" aria-describedby="phoneHelp">
+                        <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + número do telefone sem espaços ou hífen.</small>
+                        <br>
 
                         <label for="image">Upload de foto</label>
-                        <input type="file" name="userImage" id="image"><br>
+                        <input type="file" name="userImage" id="image" aria-describedby="imageHelp">
+                        <small id="imageHelp">Envie uma foto no formato PNG ou JPEG</small><br>
                 </fieldset>
 
                 <fieldset>
